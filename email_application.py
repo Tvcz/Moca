@@ -83,7 +83,7 @@ class GUI:
         self.repetitions_entry = tkinter.Entry(options_row, width=5)
         options_row.add(self.repetitions_entry)
 
-        self.html_enabled = tkinter.IntVar(0)
+        self.html_enabled = tkinter.IntVar(options_row, 0)
         options_row.add(tkinter.Checkbutton(options_row, text="Enable html embedding?", variable=self.html_enabled))
 
         subject_row = tkinter.PanedWindow()
